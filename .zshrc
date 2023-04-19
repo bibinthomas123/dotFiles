@@ -75,23 +75,6 @@ plugins=(git nvm zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-# Setting autoCompletion
-autoload -U compinit && compinit 
-
-#history setup
-setopt SHARE_HISTORY
-setopt APPEND_HISTORY
-HISTFILE=$HOME/.zhistory
-SAVEHIST=1000
-HISTSIZE=999
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt EXTENDED_HISTORY
-
-#autocompletion with arrow keys
-bindkey '\e[A' history-search-backward
-bindkey '\e[B' history-search-forward
-
-
 #NEVER BEEP 
 setopt NO_BEEP  #disabling sound error in Zsh
 # export MANPATH="/usr/local/man:$MANPATH"
